@@ -1,0 +1,321 @@
+body {
+	justify-content: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #333;
+}
+
+b {
+	font-size: 1em;
+	margin: 0;
+	padding-left: 0px;
+}
+
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1040px;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.input_1 {
+	position: absolute;
+	opacity: 0;
+}
+
+.label_1 {
+	width: 100%;
+	padding: 20px 138px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+	color: #7f7f7f;
+	transition: background 0.1s, color 0.1s;
+}
+
+.label_1:hover {
+	background: #d8d8d8;
+}
+
+.label_1:active {
+	background: #ccc;
+}
+
+.input_1:focus+.label_1 {
+	z-index: 1;
+}
+
+.input_1:checked+.label_1 {
+	background: rgba(255, 255, 255, 0.341);
+
+	color: #000;
+}
+
+@media (min-width: 600px) {
+	.label_1 {
+		width: auto;
+	}
+}
+
+.panel {
+	display: none;
+	padding: 20px 15px 29px;
+	background: rgba(255, 255, 255, 0.341);
+}
+
+@media (min-width: 600px) {
+	.panel {
+		order: 99;
+	}
+}
+
+.input_1:checked+.label_1+.panel {
+	display: block;
+}
+
+[type=radio] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.route {
+	float: left;
+	width: 300px;
+	position: relative;
+}
+
+.text_4 {
+	text-align: right;
+	font-size: 10px;
+	color: #7f7f7f;
+	width: 280px;
+	display: block;
+}
+
+.step {
+	margin: 0px auto;
+	position: relative;
+	opacity: 1;
+}
+
+.step+.step {
+	margin-top: 3em
+}
+
+.step>div:first-child {
+	position: static;
+	height: 0;
+}
+
+.step>div:not(:first-child) {
+	margin-left: 1.5em;
+	padding-left: 1.5em;
+}
+
+.circle {
+	position: relative;
+	border-radius: 100%;
+	text-align: center;
+	opacity: 1;
+}
+
+.circle:after {
+	content: ' ';
+	position: absolute;
+	display: block;
+	transform: scale(1, 2);
+	transform-origin: 50% -100%;
+}
+
+.step:last-child .circle:after {
+	display: none
+}
+
+.circle:after {
+	background-color: rgba(8, 6, 127, 0.672);
+}
+
+
+
+.circle_1 {
+	background-color: #f89f05;
+	width: 1em;
+	height: 1em;
+	margin-left: 3px;
+}
+
+.circle_1:after {
+	top: 1px;
+	right: 50%;
+	bottom: 1px;
+	left: 50%;
+	height: 140%;
+	width: 1px;
+	background-color: rgba(8, 6, 127, 0.672);
+}
+
+.circle_2 {
+	position: relative;
+	display: table;
+	border-radius: 100%;
+	text-align: center;
+
+}
+
+.circle_2:after {
+	top: 4px;
+	right: 50%;
+	bottom: -3px;
+	left: 50%;
+	height: 100%;
+	width: 1px;
+	background-color: rgba(8, 6, 127, 0.672);
+}
+
+.circle_2 img {
+	opacity: 0.5;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.circle_3 {
+	background-color: #f89f05;
+	width: 1em;
+	height: 1em;
+	margin-left: 3px;
+	top: 4px;
+}
+
+
+.circle_4 {
+	background-color: #f80505;
+	width: 1em;
+	height: 1em;
+	margin-left: 3px;
+}
+
+.circle_4:after {
+	top: 1px;
+	right: 50%;
+	bottom: 1px;
+	left: 50%;
+	height: 140%;
+	width: 1px;
+	background-color: rgba(8, 6, 127, 0.672);
+}
+
+
+.circle_5 {
+	position: relative;
+	border-radius: 100%;
+	text-align: center;
+	display: table;
+	top: 5px;
+}
+
+.circle_5:after {
+	content: ' ';
+	position: absolute;
+	display: block;
+	top: -11px;
+	right: 50%;
+	bottom: 3px;
+	left: 50%;
+	height: 180%;
+	width: 1px;
+	transform: scale(1, 2);
+	transform-origin: 50% -100%;
+	background-color: rgba(233, 33, 233, 0.734);
+}
+
+.circle_5 img {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.circle_6 {
+	background-color: #98049d85;
+	width: 1em;
+	height: 1em;
+	margin-left: 3px;
+	top: 45px;
+}
+
+.circle_6:after {
+	top: 1px;
+	right: 50%;
+	bottom: 1px;
+	left: 50%;
+	height: 140%;
+	width: 1px;
+	background-color: rgba(8, 6, 127, 0.672);
+}
+
+
+.title_6 {
+	line-height: 7.5em;
+	display: inline-block;
+}
+
+.circle_7 {
+	position: relative;
+	display: table;
+	border-radius: 100%;
+	text-align: center;
+	top: -35px;
+}
+
+.circle_7:after {
+	top: 4px;
+	right: 50%;
+	bottom: -3px;
+	left: 50%;
+	height: 100%;
+	width: 1px;
+	background-color: rgba(8, 6, 127, 0.672);
+}
+
+.circle_7 img {
+	opacity: 0.5;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.title_7 {
+	top: -35px;
+	line-height: 1.5em;
+	display: inline-block;
+	position: relative;
+}
+
+.circle_8 {
+	background-color: #f89f05;
+	width: 1em;
+	height: 1em;
+	margin-left: 3px;
+	top: -27px;
+}
+
+.title_8 {
+	top: -27px;
+	line-height: 1.5em;
+	display: inline-block;
+	position: relative;
+}
+
+title {
+	line-height: 1.5em;
+	display: inline-block;
+	opacity: 1;
+}
+
+.caption {
+	font-size: 0.75em;
+	padding-left: 45px;
+	color: #7f7f7f;
+}
+
+.maps {
+	float: right;
+}

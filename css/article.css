@@ -1,0 +1,186 @@
+.carte {
+	margin: 0 auto;
+}
+
+button{
+	background-color: none;
+	border: none;
+	background: none;
+}
+form {
+	float: right;
+	top: 16px;
+	position: relative;
+}
+
+.text-input {
+	display: inline;
+	position: relative;
+	width: 400px;
+	border: 1px solid #0000007f;
+	background: #ffffff9b;
+	border-radius: 5px;
+	height: 30px;
+}
+
+.input_img {
+	margin: -5px 5px 0;
+	float: right;
+}
+
+.dropbtn {
+	background: rgba(83, 151, 149, 1);
+	background-image: url(1.svg);
+	color: rgb(0, 0, 0);
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #4c8f4e;
+}
+.card_title {
+	font-size: 22px;
+	text-align: center;
+ }
+
+.year_menu {
+	padding: 20px;
+}
+
+.year {
+	background: rgba(83, 151, 149, 1);
+	background-image: url(1.svg);
+	color: rgb(0, 0, 0);
+	padding: 16px;
+	font-size: 16px;
+	border-radius: 10px;
+	margin: 0px auto;
+	position: relative;
+	max-width: 100px;
+	text-align: center;
+	display: inline;
+	text-decoration: none;
+}
+
+.year_content {
+	margin: 30px auto;
+}
+
+.year_pdf {
+	margin: 40px auto;
+}
+
+.year_pdf_download {
+	background: rgba(83, 151, 149, 1);
+	background-image: url(1.svg);
+	color: rgb(0, 0, 0);
+	padding: 10px 16px;
+	font-size: 16px;
+	border-radius: 10px;
+	max-width: 100px;
+	text-align: center;
+	display: inline;
+	text-decoration: none;
+}
+
+.year_preview {
+	font-size: 18px;
+}
+.cards{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.grid {
+	height: 100%;
+	display: grid;
+	
+	align-items: flex-start;
+	-webkit-box-pack: start;
+	justify-content: flex-start;
+	grid-template-columns: repeat(9, minmax(0px, 1fr));
+	gap: 10px;
+}
+
+
+.card {
+	grid-column: span 3 / auto;
+	}
+/*
+.card::before {
+	width: 100%;
+	content: "";
+	position: absolute;
+	inset: 10px -10px -10px auto;
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 3px;
+}*/
+
+.card_content {
+	border-radius: 3px;
+padding: 5px;
+}
+
+.card_pi {
+	position: relative;
+	transition: transform 0.2s ease 0s;
+}
+
+.card_pia {
+	position: relative;
+	z-index: 1;
+	background: rgba(255, 255, 255, 0.486);
+	box-shadow: 0 0 15px 10px #00000011;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+.card_p1 {
+	font-family: "PT Serif", serif;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.card_p4 {
+	font-family: "PT Serif", serif;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 4px;
+}
+
+.card a {
+	text-decoration: none;
+	color: inherit;
+	transition: color 0.3s ease 0s !important;
+}

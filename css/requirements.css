@@ -1,0 +1,116 @@
+.conte {
+	display: flex;
+}
+
+.form_container {
+	width: 360px;
+	position: relative;
+	left: 20px;
+}
+
+.form_container .img {
+	margin: -26px -69px;
+	transform: rotate(-225deg);
+	position: absolute;
+	width: 500px;
+	opacity: 0.6;
+	height: 350px;
+}
+
+.form_wrapp {
+	border: 1px solid #1c1c1c;
+	width: 360px;
+	float: right;
+	position: absolute;
+
+}
+
+.form_title {
+	padding: 25px 0 0 80px;
+	font-family: 'MightMakesRightBB';
+}
+
+.form_content {
+	padding: 20px;
+	margin: 0 auto;
+}
+
+#title,
+#player {
+	margin: 10px 70px;
+	padding: 10px;
+}
+
+.form_input {
+	margin: 0 auto;
+}
+
+.input__wrapper {
+	width: 100%;
+	position: relative;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.input__file {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+
+.input__file-icon-wrapper {
+	height: 30px;
+	width: 45px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.input__file-button-text {
+	line-height: 1;
+	margin-top: 1px;
+}
+
+.input__file-button {
+	width: 100%;
+	max-width: 165px;
+	height: 35px;
+	color: #080808;
+	font-size: 13px;
+	font-weight: 500;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	border-radius: 3px;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+.form_submit {
+	margin: 0 auto;
+	display: block;
+	border: 1px solid #000000;
+	margin: 00px auto;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #fff;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+.text_2 {
+	position: relative;
+}

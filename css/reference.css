@@ -1,0 +1,40 @@
+html {
+	scroll-behavior: smooth;
+ }
+.reference {
+	display: none;
+}
+
+.reference~.story {
+	display: none;
+}
+
+.reference+label {
+	position: relative;
+	top: 0;
+	padding: 3px;
+	font-size: 16px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+i{
+	text-decoration-line: underline; 
+}
+
+.reference:checked~.story {
+	display: block;
+	background: Snow;
+	padding: 10px;
+}
+
+.spravca {
+	position: relative;
+}
+
+.li {
+	margin-left: 40px;
+	padding-top: 5px;
+	font-size: 14px;
+	text-decoration: none;
+}
